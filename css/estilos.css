@@ -960,11 +960,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
 
 .formulario
 {
-  width: 100%;
+  /*background:orange;*/
+  /*border: 1px solid black;*/
+  margin-left: auto;
+  margin-right: auto;
+  left:0;
   position: relative;
-  left: 20%;
-  overflow: hidden;
-  padding-bottom: 2em;
+  right:0;
+  text-align: center;
+  width: 50%;
 }
 .formulario h2
   {
@@ -974,6 +978,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
     background: -webkit-linear-gradient(#ffffff, #acc0e8 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
   }
 .formulario input
 {
@@ -987,6 +992,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
 .formulario input[type="submit"]
 {
   color: rgba(230, 200, 200, 1);
+  width: 160px;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -1377,6 +1383,7 @@ footer[role="contentinfo"] {
   }
   .formulario
   {
+    width: 100%;
     left: 0;
     position: relative;
     overflow: hidden;
