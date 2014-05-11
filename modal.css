@@ -143,7 +143,7 @@ html {
     right: 20px;
     margin-left: 0;
     background: rgba(1, 1, 1, 0.8);
-    z-index: -1;
+    z-index: 999;
   }
   .semantic-content .modal-close {
     left: auto;
@@ -154,7 +154,7 @@ html {
     margin-left: 40%;
   }
 }
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 300px) {
   .semantic-content {
     -webkit-transform: translate(0, 400px);
     -webkit-transform: translate3d(0, 100%, 0);

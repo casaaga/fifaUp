@@ -257,16 +257,21 @@ footer .prose h2
 }
 .redes-share
 {
-  position: absolute;
-  bottom: 1em;
-  right: 20%;
-  z-index: 999; 
-  /*left: 20%;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5em;
+    left: 0;
+    right: 0;
+    width: 140px;
+    /*background: red;*/
+    border: 1px solid black;
 }
-  .redes-share p
+.redes-share p
   {
     padding-bottom: 1em;
     font-size:.7em;
+    text-align: center;
   }
     .redes-share iframe 
   {
@@ -463,6 +468,7 @@ footer .prose h2
 .footer
 {
   text-align: center;
+  padding-bottom: 4em;
 }
 .highlight {
   background: #fff699;
@@ -952,8 +958,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
   /*padding: 2.625em 1.875em;*/
 }
 
+.formulario
+{
+  width: 100%;
+  position: relative;
+  left: 20%;
+  overflow: hidden;
+  padding-bottom: 2em;
+}
+.formulario h2
+  {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: left;
+    background: -webkit-linear-gradient(#ffffff, #acc0e8 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.formulario input
+{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px dashed;
+  border-color: rgba(255, 255, 255, 0.4);
+  margin: 1em;
+  color: #fff;
+  padding: .7em;
+}
+.formulario input[type="submit"]
+{
+  color: rgba(230, 200, 200, 1);
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    rgba(255, 255, 255, 0.4);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    rgba(255, 255, 255, 0.4);
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    rgba(255, 255, 255, 0.4);
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    rgba(255, 255, 255, 0.4);
+}
+
 footer[role="contentinfo"] {
   background: #060a2d;
+  padding-bottom: 2em;
 }
 
 @media screen and (min-width: 800px) {
@@ -1134,13 +1187,7 @@ footer[role="contentinfo"] {
 
   .redes-share
   {
-    position: absolute;
-    bottom: .3em;
-    left: 32%;
-    right: 27%;
-    z-index: 999; 
-    padding-bottom: 1em;
-    width: 141px !important;
+    
   }
   .redes-share p
   {
@@ -1328,4 +1375,22 @@ footer[role="contentinfo"] {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
+  .formulario
+  {
+    left: 0;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+  .formulario h2
+  {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .formulario input
+  {
+    
+  }
 }
+
