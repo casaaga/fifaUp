@@ -55,15 +55,22 @@ header
 {
   height: 130px;
 }
+header figure
+{
+  height:70px;
+  left:0;
+  margin-left: auto;
+  /*margin-top:30px;*/
+  margin-right: auto;
+  position: absolute;
+  right:0;
+  width:300px;
+  /*background:red;*/
+  /*border: 1px solid black;*/
+}
 header .logo img 
 {
-  width: 295px;
-  height: 96px;
-  margin-top: 2%;
-  margin-left: 0px;
-  left: 40%;
-  top: 0%;
-  position: absolute;
+  width: 100%
 }
 
 a:focus {
@@ -282,6 +289,15 @@ footer .prose h2
   {
     border-bottom: 1px solid #fff;
     padding: 1em 0;
+    text-align: center;
+  }
+  .btn-descaga a
+  {
+    padding: 1em 0;
+  }
+  .btn-descaga a img
+  {
+    width: 20%;
   }
 .contrasena .contra-description
 {
@@ -395,22 +411,24 @@ footer .prose h2
 
 .descargas_2
 {
-  float: left;
+    /*background:orange;*/
+    /*border: 1px solid black;*/
+    left:0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right:0;
+    text-align: center;
+    width:50%;
 }
 
 .descargas_2 img
   {
-   width: 50%;
-    margin-left: 0;
-    position: relative;
-    left: 25%;
-    right: 25%;
-    margin: 1em;
+    width:100%;
   }
 
 .descarga button, .prose .app1 button
 {
-  width: 47%;
   background-color: transparent;
   border: 0;
   text-align: center;
@@ -421,10 +439,14 @@ footer .prose h2
 }
 .descargas img
 {
-    max-width:100% !important;
-    height:auto;
-    display:block;
-    margin-left: 15em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left:0;
+  right:0;
+  width:100%;
+  /*background:orange;
+  border: 1px solid black;*/
 }
 
 .planes .plan-description
@@ -720,7 +742,8 @@ display: block;
   font-size: 1em;
   line-height: 1.5em;
   color: #0099ff;
-  border-top: 1px solid #0099ff;
+  border-top: 1px solid;
+  border-color: rgba(192, 229, 253, 0.6);
   padding: 1em 0;
 }
 .toggle
@@ -1020,7 +1043,6 @@ footer[role="contentinfo"] {
 }
 @media screen and (min-width: 45.0625em) {
   
-  
   #top .nav-btn {
     border: 0;
     clip: rect(0 0 0 0);
@@ -1065,23 +1087,23 @@ footer[role="contentinfo"] {
   }
   #nav li a {
     padding: 0.42857em 0.85714em;
+    padding-left: 0.4em;  
   }
 }
 @media screen and (max-width: 45em) {
   header
-{
-  height: 75px;
-}
-    header .logo img 
   {
-    width: 150px;
-    height: 50px;
-    margin-top: 3%;
-    margin-left: 30px;
-    left: 25%;
-    top: 0%;
-    position: absolute;
+    height: 75px;
   }
+  header figure
+  {
+    width:150px;
+    margin-top: -1em;
+  }
+  header .logo img 
+  {
+    width: 100%
+  } 
   footer
   {
     padding-bottom: 4em;
@@ -1106,22 +1128,14 @@ footer[role="contentinfo"] {
     left:-3em;
     margin-top: 12em;
   }
-  .descarga button img, .prose .app1 img
-  {
-    width: 100%;
-  }
   .descargas img
   {
-    width: 60%;
-    margin-left: 0;
-     float: left;
+    width:50%;
+    float: left;
   }
   .descargas_2 img
   {
-    width: 60%;
-    margin-left: 0;
-     float: left;
-     margin-bottom: 2em;
+    width: 100%;
   }
   .descarga-res
   {
