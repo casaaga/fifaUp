@@ -638,7 +638,7 @@ display: block;
 .prose .app img
 {
   background: rgba(255, 255, 255, 0);
-  bottom: .5em;
+  bottom: 4.0em;
   width: 190px;
   height: auto;
   border: 0;
@@ -649,6 +649,13 @@ display: block;
 .prose .descargas
 {
   overflow: hidden;
+  margin-bottom: 1em;
+}
+p.disclaimer {
+	text-align: center;
+	font-size: 0.8em;
+	clear: both;
+	margin: 0 0 1em;
 }
 #main .block .box-container
 {
@@ -1205,7 +1212,7 @@ footer[role="contentinfo"] {
   .prose .app img
   {
     background: rgba(255, 255, 255, 0);
-    bottom: .5em;
+    bottom: 5.5em;
     width: 190px;
     height: auto;
     border: 0;
