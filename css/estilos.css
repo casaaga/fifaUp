@@ -288,7 +288,7 @@ footer .prose h2
 .btn-descaga
   {
     border-bottom: 1px solid #fff;
-    padding: 1em 0;
+    padding: 1em 0 2em;
     text-align: center;
   }
   .btn-descaga a
@@ -299,6 +299,11 @@ footer .prose h2
   {
     width: 20%;
   }
+  .descarga-res
+  {
+	  padding: 1em 0;
+	}
+  
 .contrasena .contra-description
 {
   border-top: 1px solid #4b75bc;
@@ -600,7 +605,7 @@ footer .prose h2
   font-size: 1em;
   font-weight: lighter;
   line-height: 1.25em;
-  margin: 0;
+  margin: 0 0 0.3em;
   text-shadow: 2px 2px #010101;
 }
 .prose h3 {
@@ -612,15 +617,13 @@ footer .prose h2
   text-shadow: 2px 2px #010101
 }
 .prose a {
-  color: #6d7173;
-  border-bottom: 1px solid #a1cfe5;
+  color: #C0C0C0;
   text-decoration: none;
   outline: none;
 }
 
 .prose a:focus, .prose a:hover {
-  color: #4ab336;
-  border-bottom-color: #77b36b;
+  color: #a1cfe5;
 }
 .prose img {
 max-width: 50% ;
@@ -821,8 +824,17 @@ border-bottom: none;
 }
 .descarga h1
 {
-  font-size: 1em;
+/*  font-size: 1em;
+*/}
+.descarga button.conoce
+{
+  background-color: #6dcff6;
+  border: none;
+  margin-top: 1em;
+  width: 195px;
+  height: 37px;
 }
+
 
 .block {
   position: relative;
@@ -1137,7 +1149,7 @@ footer[role="contentinfo"] {
   .btn-descaga
   {
     border-bottom: 1px solid #fff;
-    padding: 1em 0;
+    padding: 1em 0 2em;
   }
   .conoce figure
   {
