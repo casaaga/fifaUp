@@ -481,7 +481,8 @@ footer .prose h2
   border: none;
   margin-top: 1em;
   height: 37px;
-  width: 90%;
+  width: 40%;
+  font-size: .9em;
 }
 .planes
 {
@@ -743,14 +744,15 @@ display: block;
   line-height: 1.5em;
   color: #0099ff;
   border-top: 1px solid;
-  border-color: rgba(192, 229, 253, 0.6);
+  border-color: rgba(192, 229, 253, 0.3);
   padding: 1em 0;
 }
 .toggle
 {
-  border-top: 1px solid #0099ff;
+ /* border-top: 1px solid #0099ff;*/
   padding: 1em 0;
-  margin-top: 1em;
+  margin-top: .5em;
+  padding-top: .5em;
 }
 .preguntas ul li a 
 {
@@ -796,6 +798,14 @@ border-bottom: none;
   color: #000;
 }*/
 
+.preguntas dd {
+  color: #FFFFFF;
+  margin-left: 0;
+}
+
+.preguntas dl {
+  margin: 0;
+}
 
 .preguntas h1, .planes h1, .prose h1, .descarga h1, .conoce h1, .contrasena h1, .fanaticos h1
 {
@@ -981,7 +991,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
   /*padding: 2.625em 1.875em;*/
 }
 
-.formulario
+.form
 {
   /*background:orange;*/
   /*border: 1px solid black;*/
@@ -993,7 +1003,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
   text-align: center;
   width: 50%;
 }
-.formulario h2
+.form h2, .done h2
   {
     font-size: 2em;
     font-weight: 300;
@@ -1003,7 +1013,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
     -webkit-text-fill-color: transparent;
     text-align: center;
   }
-.formulario input
+  .done h2
+  {
+    padding-bottom: 1em;
+    font-size: 1.3em;
+  }
+
+.form input
 {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px dashed;
@@ -1012,10 +1028,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
   color: #fff;
   padding: .7em;
 }
-.formulario input[type="submit"]
+.form input[type="submit"]
 {
-  color: rgba(230, 200, 200, 1);
+  color: #ffffff;
   width: 160px;
+  background: rgba(255, 255, 255, .2);
+}
+.form input[type="submit"]:hover
+{
+  width: 160px;
+  background: rgba(255, 255, 255, .5);
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -1192,6 +1214,7 @@ footer[role="contentinfo"] {
   {
     position: relative;
     top: 100%;
+    width: 90%;
   }
   
   .prose h1
@@ -1395,7 +1418,7 @@ footer[role="contentinfo"] {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  .formulario
+  .form
   {
     width: 100%;
     left: 0;
@@ -1404,12 +1427,12 @@ footer[role="contentinfo"] {
     padding-bottom: 2em;
     text-align: center;
   }
-  .formulario h2
+  .form h2
   {
     font-size: 1.5em;
     text-align: center;
   }
-  .formulario input
+  .form input
   {
     
   }
