@@ -69,7 +69,7 @@ $ug = new usergrid();
 $r=array("status"=>200,"message"=>"success");
 $name = isset($_POST['name'])?$_POST['name']:"";
 $phone = isset($_POST['phone'])?$_POST['phone']:"";
-$email = isset($_POST['e-mail'])?$_POST['e-mail']:"";
+$email = isset($_POST['email'])?$_POST['email']:"";
 
 if (empty($name) or empty($phone) or empty($email)){
 	$r["message"]="error creating user";

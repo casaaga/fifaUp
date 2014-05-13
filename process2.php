@@ -25,7 +25,7 @@ if (!$errors) {
 	$from = $name . ' <' . $email . '>';
 	
 	//subject and the html message
-	$subject = 'Quiero reservar ' . $name;	
+	$subject = 'Tifo FiFA ' . $name;	
 	$message = '
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -45,8 +45,8 @@ if (!$errors) {
 	
 	//if POST was used, display the message straight away
 	if ($_POST) {
-		if ($result) echo 'Hemos recibido tu slicitud. Gracias! Sonrie tienes Tigo.';
-		else echo 'Sorry, unexpected error. Please try again later';
+		if ($result) echo 'Hemos recibido tu solicitud. Gracias! Sonrie tienes Tigo.';
+		else echo 'Lo sentimos ha ocurrido un error, intenta nuevamente';
 		
 	//else if GET was used, return the boolean value so that 
 	//ajax script can react accordingly
