@@ -14,6 +14,8 @@
 
     <!--[if (gt IE 8) | (IEMobile)]><!-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/jquery.sharer.css">
+    <link rel="stylesheet" href="css/demo.css">
     <!--<![endif]-->
     <!--[if (lt IE 9) & (!IEMobile)]>
     <link rel="stylesheet" href="css/ie.css">
@@ -175,17 +177,20 @@
         </div>
         <div class="redes-share">
         <p>Comparte en redes sociales</p>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-            <div class="fb-share-button" data-href="http://tigo.com" data-type="button">    </div>
+           <div class="jquery-script-clear"></div>
+            <div id="sharer-bottom" class="sharer-container"></div>
         </div>
     </footer>
 
-</div>
-<!--/#inner-wrap-->
-</div>
-<!--/#outer-wrap-->
+    
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+<script src="js/jquery.sharer.js"></script> 
+<script>$(".sharer-container").sharer()</script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
+
 <script type="text/javascript">
         $(function() {
           $('a[href*=#]:not([href=#])').click(function() {

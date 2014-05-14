@@ -14,10 +14,35 @@
 
     <!--[if (gt IE 8) | (IEMobile)]><!-->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/jquery.sharer.css">
+    <link rel="stylesheet" href="css/demo.css">
     <!--<![endif]-->
     <!--[if (lt IE 9) & (!IEMobile)]>
     <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
+
+    <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + 
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+        })();
+        </script>
+
+        <script type='text/javascript'>
+        googletag.cmd.push(function() {
+        googletag.defineSlot('/29383761/Landing_Page_Banner', [250, 75], 'div-gpt-ad-1400012482759-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+        });
+    </script>
 </head>
 <body>
 <div id="outer-wrap">
@@ -123,9 +148,15 @@
                 </div>
             </div>
             
-            <figure class="app">
+            <!-- <figure class="app">
                 <img src="img/btn-ios-home.png" alt="">
-            </figure>
+            </figure> -->
+
+            <div id='div-gpt-ad-1400012482759-0' style='width:250px; height:75px; display:none;' class="div-gpt-ad">
+            <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1400012482759-0'); });
+            </script>
+            </div>
                             <p>&nbsp;</p>
                             <p class="disclaimer">Para mayor comodidad, disfruta de las transmisiones EN VIVO utilizando cualquier conexión WiFi.</p>
 
@@ -133,6 +164,8 @@
 
         
     </div>
+
+    <!-- Landing_Page_Banner -->
     
     <footer role="contentinfo" class="contentinfo">
         <div class="block prose">
@@ -141,16 +174,20 @@
         </div>
         <div class="redes-share">
         <p>Comparte en redes sociales</p>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-            <div class="fb-share-button" data-href="http://tigo.com" data-type="button">    </div>
+           <div class="jquery-script-clear"></div>
+            <div id="sharer-bottom" class="sharer-container"></div>
         </div>
     </footer>
-</div>
-<!--/#inner-wrap-->
-</div>
-<!--/#outer-wrap-->
+
+    
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script> 
+<script src="js/jquery.sharer.js"></script> 
+<script>$(".sharer-container").sharer()</script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
+
 <script type="text/javascript">
         $(function() {
           $('a[href*=#]:not([href=#])').click(function() {

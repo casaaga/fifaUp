@@ -9,6 +9,10 @@ $.sharer = {
 		"twitter": {
 			"name": "Twitter",
 			"url": "https://twitter.com/share?url=%url%&text=%title%+%description%"
+		},
+		"linkedin": {
+			"name": "LinkedIn",
+			"url": "mailto:app.support@millicom.com"
 		}
 	},
 	"options": {
@@ -17,7 +21,7 @@ $.sharer = {
 		"class": "sharer-icon-%network.id%",
 		"label": "Share on %network.name%",
 		"title": null,
-		"description": 'null',
+		"description": 'Hola Mundo',
 		"url": null
 	}
 };
