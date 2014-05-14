@@ -255,6 +255,11 @@ footer .prose p
   text-align: center;
   width: 100%;
 }
+footer .prose p a
+{
+  text-align: center;
+  font-size: 1.2em !important;
+}
 footer .prose h2
 {
   text-align: center;
