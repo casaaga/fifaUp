@@ -368,24 +368,48 @@ footer .prose h2
   overflow: hidden;
   overflow: auto;
 }
+
+.conoce .container
+{
+  /*background-color: red;*/
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  text-align: center;
+  padding: 0 1em;
+}
+
 .conoce figure
 {
-  position: absolute;
-  left: 10%;
-  right: 10%;
+  /*background-color: yellow;*/
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  text-align: center;
+  display: inline-block;
 }
 .conoce ul {
-  list-style-image: url('../img/list-arrow.png');
+   /*background-color: blue;*/
+  display: inline-block;
   font-size: 1em;
+  left: 0;
+  list-style-image: url('../img/list-arrow.png');
   line-height: 1.5em;
-  margin-bottom: 1.5em;
-  /*width: 10%;*/
-  margin: auto;
-  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding-left: 2em;
   position: relative;
-  left: -10%;
-  float: right;
-  right: 10%;
+  right: 0;
+  text-align: left;
+  vertical-align:top;
 }
 .conoce ul li {
   padding-left: .5em;
@@ -1215,17 +1239,6 @@ footer[role="contentinfo"] {
   {
     border-bottom: 1px solid #fff;
     padding: 1em 0 2em;
-  }
-  .conoce figure
-  {
-    position: absolute;
-  left: 12%;
-  right: 12%;
-  }
-    .conoce ul
-  {
-    left:-3em;
-    margin-top: 12em;
   }
   .descargas img
   {
