@@ -473,6 +473,12 @@ footer .prose h2
   width: 195px;
   height: 37px;
 }
+.destacado {
+	border: 1px solid #C4E4FF;
+	padding: 1em;
+	text-align: center;
+	margin-bottom: 2em;
+}
 
 /*.prose .app button
 {
