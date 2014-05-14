@@ -272,8 +272,8 @@ footer .prose h2
     right: 0;
     width: 320px;
     /*background: red;*/
-    border: 1px solid black;
-}
+/*    border: 1px solid black;
+*/}
 .redes-share p
   {
     padding-bottom: 1em;
@@ -587,15 +587,15 @@ footer .prose h2
   line-height: 1.5em;
   position: relative;
   left: 20%;
-  text-align: justify;
+  text-align: left;
   width: 74%;
 }
 .prose p {
   font-size: 1em;
   font-weight: 300;
   line-height: 1.5em;
-  width: 95%;
-  /*margin-bottom: 1.5em;*/
+/*  width: 95%;
+	margin-bottom: 1.5em;*/
 }
 .prose p:last-child {
   margin-bottom: 0;
@@ -613,7 +613,7 @@ footer .prose h2
   font-size: 1.2em;
   font-weight: 700;
   line-height: 1.25em;
-  margin-bottom: 1em;
+  margin-bottom: 0.2em;
   text-shadow: 2px 2px #010101
 }
 .prose a {
@@ -689,9 +689,9 @@ p.disclaimer {
 {
   font-size: .7em !important;
 }
-.app2 h3
+.app2 p.beneficios
 {
-  
+	font-size: 0.7em;
 }
 
 .footer
@@ -1043,21 +1043,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px dashed;
   border-color: rgba(255, 255, 255, 0.4);
-  margin: 1em;
+  margin: 0.7em;
   color: #fff;
-  padding: .7em;
+  padding: .5em;
+  width: 70%;
 }
 .form input[type="submit"]
 {
-  color: #ffffff;
-  width: 160px;
-  background: rgba(255, 255, 255, .2);
+  color: #00316A;
+  width: 100px;
+  background-color: #6dcff6;
+  border: none;
 }
 .form input[type="submit"]:hover
 {
-  width: 160px;
+  width: 100px;
   background: rgba(255, 255, 255, .5);
 }
+
+.formulario {
+	  clear: both;
+	  overflow: auto;
+	  border-top: 1px solid #56a1f9;
+	  padding-top: 1em;
+}
+
 
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    rgba(255, 255, 255, 0.4);
@@ -1084,8 +1094,28 @@ footer[role="contentinfo"] {
   padding-bottom: 2em;
 }
 
-@media screen and (min-width: 800px) {
-
+@media screen and (min-width: 980px) {
+	.descargas {
+		width: 50%;
+		float: left;
+	}
+	.descargas img {
+		max-width: 80%;
+	}
+	.box-container {
+		width: 50%;
+		margin-top: 5em;
+	}
+	.formulario .form {
+		width: 100%;
+	}
+	.form input {
+		width: 24%;
+		float: left;
+	}
+	.prose .app2 button {
+		width: 70%;
+	}
 }
 @media screen and (min-width: 45.0625em) {
   
@@ -1244,10 +1274,10 @@ footer[role="contentinfo"] {
   .prose h1
   {
     font-size: 1.1em;
-    font-weight: 300;
-    padding-top: 3.5em;
+    font-weight: bold;
+    padding-top: 2.5em;
     text-align: left;
-    width: 35%;
+    width: 50%;
     float: right;
 
   }
