@@ -270,14 +270,15 @@ footer .prose h2
 }
 .redes-share
 {
-    position: relative;
+    /*background: red;*/
+    left: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: .5em;
-    left: 0;
+    overflow: hidden;
+    position: relative;
     right: 0;
-    width: 380px;
-    /*background: red;*/
+    width: 300px;
 /*    border: 1px solid black;
 */}
 .redes-share p
@@ -1305,23 +1306,6 @@ footer[role="contentinfo"] {
     float: right;
 
   }
-
-  .redes-share
-  {
-    
-  }
-  .redes-share p
-  {
-    padding-bottom: 1em;
-    font-size:.7em;
-    text-align: center;
-  }
-    .redes-share iframe 
-  {
-    width: 85px !important;
-    float: left !important;
-  }
-
 
   #main .block .box-container .descargar-app
   {

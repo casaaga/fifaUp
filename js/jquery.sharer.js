@@ -4,14 +4,14 @@ $.sharer = {
 	"networks": {
 		"facebook": {
 			"name": "Facebook",
-			"url": "http://www.facebook.com/share.php?u=%url%"
+			"url": "http://www.facebook.com/share.php?u=%url%&text=%description%"
 		},
 		"twitter": {
 			"name": "Twitter",
-			"url": "https://twitter.com/share?url=%url%&text=%title%+%description%"
+			"url": "https://twitter.com/share?&text=%description%"
 		},
 		"linkedin": {
-			"name": "LinkedIn",
+			"name": "Mail Millicom",
 			"url": "mailto:app.support@millicom.com"
 		}
 	},
@@ -21,7 +21,7 @@ $.sharer = {
 		"class": "sharer-icon-%network.id%",
 		"label": "Share on %network.name%",
 		"title": null,
-		"description": 'Hola Mundo',
+		"description": 'Vive la LOCURA extrema del fútbol con la App EXCLUSIVA de Tigo Copa Mundial FIFA™. Descárgala YA',
 		"url": null
 	}
 };
