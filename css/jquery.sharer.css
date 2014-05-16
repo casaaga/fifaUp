@@ -1,6 +1,5 @@
 .sharer-icon {
   background-image: url(../img/sharer.png);
-/*  background-color: #fff;*/
   opacity: .9;
   float: left;
   height: 50px;
@@ -15,22 +14,4 @@
 }
 .sharer-icon.sharer-icon-linkedin {
   background-position: -100px 0;
-}
-.sharer-icon.sharer-icon-tumblr {
-  background-position: -150px 0;
-}
-.sharer-icon.sharer-icon-googleplus {
-  background-position: -200px 0;
-}
-.sharer-icon.sharer-icon-reddit {
-  background-position: -250px 0;
-}
-.sharer-icon.sharer-icon-pinterest {
-  background-position: -300px 0;
-}
-.sharer-icon.sharer-icon-stumbleupon {
-  background-position: -350px 0;
-}
-.sharer-icon.sharer-icon-taringa {
-  background-position: -400px 0;
 }
