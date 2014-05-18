@@ -91,7 +91,7 @@
 			youtube : {
 				matcher : /(youtube\.com|youtu\.be|youtube-nocookie\.com)\/(watch\?v=|v\/|u\/|embed\/?)?(videoseries\?list=(.*)|[\w-]{11}|\?listType=(.*)&list=(.*)).*/i,
 				params  : {
-					autoplay    : 1,
+					autoplay    : 0,
 					autohide    : 1,
 					fs          : 1,
 					rel         : 0,
@@ -105,7 +105,7 @@
 			vimeo : {
 				matcher : /(?:vimeo(?:pro)?.com)\/(?:[^\d]+)?(\d+)(?:.*)/,
 				params  : {
-					autoplay      : 1,
+					autoplay      : 0,
 					hd            : 1,
 					show_title    : 1,
 					show_byline   : 1,
