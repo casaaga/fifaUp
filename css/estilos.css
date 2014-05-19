@@ -484,6 +484,9 @@ footer .prose h2
   /*background:orange;
   border: 1px solid black;*/
 }
+.descarga p {
+	text-align: center;
+}
 
 .planes .plan-description
 {
@@ -499,11 +502,24 @@ footer .prose h2
   height: 37px;
 }
 .destacado {
+	position: relative;
 	border: 1px solid #C4E4FF;
 	padding: 1em;
 	text-align: center;
+	padding: 1.5em 1em;
+	margin: 1.5em 1em;
+}
+.destacado li {
+	text-align: left;
+}
+.destacado li span {
+	color: #0099ff;
+	font-weight: bold;
+}
+.destacado p {
 	margin-bottom: 2em;
 }
+
 
 /*.prose .app button
 {
@@ -553,6 +569,7 @@ footer .prose h2
 }
 .planes ul li {
   padding-left: .5em;
+  text-align: left;
 }
 .planes p {
   font-size: 1em;
@@ -592,22 +609,21 @@ footer .prose h2
   margin: 0;
 }
 .planes a {
-  color: #6d7173;
-  border-bottom: 1px solid #a1cfe5;
-  text-decoration: none;
+  color: #0099ff;
+  text-decoration: underline;
   outline: none;
 }
 .planes a:focus, .planes a:hover {
-  color: #4ab336;
-  border-bottom-color: #77b36b;
+  color: #0099ff;
+  text-decoration: underline;
 }
 .planes .planes-txt
 {
   text-align: center;
   position: relative;
-  left: 15%;
-  right: 50%;
-  width: 70%;
+  left: 0%;
+  right: 0%;
+  width: 90%;
   margin-bottom: 2em;
 }
 .planes .planes-txt p:nth-child(2)
@@ -1069,7 +1085,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0047a6', end
   {
     padding-bottom: 1em;
     font-size: 1.3em;
-	-webkit-text-fill-color: white;
+	-webkit-text-fill-color: white!important;
   }
 
 .form input
